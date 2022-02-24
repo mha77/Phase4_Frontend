@@ -29,8 +29,7 @@
                   <!-- Email -->
                   <div id="ProductField" name="ProductField" class="form-group row">
                     <label for="product" class="col-sm-4 ml-4 col-form-label"
-                      >Product:*</label
-                    >
+                      >Product:*</label>
                     <div class="col-sm-6">
                       <input
                         type="text"
@@ -43,8 +42,7 @@
                   </div>
                   <div id="CompanyField" name="CompanyField" class="form-group row">
                     <label for="company" class="col-sm-4 ml-4 col-form-label"
-                      >Company:*</label
-                    >
+                      >Company:*</label>
                     <div class="col-sm-6">
                       <input
                         type="text"
@@ -55,13 +53,38 @@
                       />
                     </div>
                   </div>
+                  <div id="unitsField" name="unitsField" class="form-group row">
+                    <label for="units" class="col-sm-4 ml-4 col-form-label"
+                      >Units:*</label>
+                    <div class="col-sm-6">
+                      <input
+                        type="number"
+                        id="units"
+                        name="units"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div id="priceField" name="priceField" class="form-group row">
+                    <label for="price" class="col-sm-4 ml-4 col-form-label"
+                      >Price:*</label>
+                    <div class="col-sm-6">
+                      <input
+                        type="number"
+                        id="price"
+                        name="price"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
                   <!-- Submit Button -->
-                <div id="registrationButton">
+                <div id="addRow">
                     <input
                         type="button"
                         value="Add Row"
                         class="btn btn-block btn-primary mb-2"
-                        onClick="addRowToTable()"
                     />
                 </div>
                 </form>
@@ -72,16 +95,29 @@
                     <tr>
                         <th>Name</th>
                         <th>Company</th>
+                        <th>Unit</th>
+                        <th>Price</th>
+                        <th>Action1</th>
+                        <th>Action2</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Salt</td>
                         <td>Berchtesgadener</td>
+                        <td>100</td>
+                        <td>2,99</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Soße</td>
                         <td>Miraculi</td>
+                        <td>100</td>
+                        <td>4,49</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
